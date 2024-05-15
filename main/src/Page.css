@@ -1,0 +1,173 @@
+/* Page.css */
+
+/* Global styles */
+body {
+    background-image: none;
+    background-color: cyan;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  /* Page container */
+  .page-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Item container */
+  .item-container {
+    flex: 1;
+    max-width: 900px;
+    position: relative;
+    margin: 0 10px;
+    z-index: 2;
+  }
+  
+  /* Item card */
+  .item-card {
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: rgba(58, 108, 160, 0.3);
+    border-radius: 25px; /* Set the border radius to make corners curved */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+    width: 410px;
+    height: 450px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .item-card img {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+  
+  .item-card h2,
+  .item-card p {
+    margin: 10px;
+    font-size: 14px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .button-container button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+  }
+  
+  .button-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Badge */
+  .badge {
+    color: red;
+    font-weight: bolder;
+  }
+  
+  /* Smaller container */
+  .smaller-container {
+    --blur-amount: 10px;
+    --max-width: 375px;
+    --max-height: 350px;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 25px; /* Set the border radius to make corners curved */
+    text-align: center;
+    width: var(--max-width);
+    height: var(--max-height);
+    backdrop-filter: blur(var(--blur-amount));
+    z-index: 1;
+  }
+  
+  
+  /* Logout container */
+  .logout-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    z-index: 4;
+  }
+  
+  /* Notification container */
+  .notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 7;
+  }
+  
+  /* Notification icon */
+  .notification-icon {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .notification-icon .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+  }
+  
+  .notification-icon svg {
+    font-size: 24px; /* Increase bell icon size */
+  }
+  
+  /* Notification content */
+  .notification-content {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+  }
+  
+  .notification-content p {
+    margin: 0;
+  }
+  
+  

@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-image: none;
+  background-color: cyan;
+}
+
+#middleBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #007bff;
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  padding: 60px; /* Optional: Add padding */
+  width: 90%; /* Set the width of the middle box */
+  max-width: 1000px; /* Set the maximum width of the middle box */
+  text-align: center; /* Center the text inside the middle box */
+}
+#logo {
+  width: 350px; /* Adjust the size of the logo */
+  height: 350px; /* Adjust the size of the logo */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+p {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px; /* Add space between the text and buttons */
+  max-width: 90%; /* Set a maximum width for the paragraph */
+  word-wrap: break-word; /* Allow the paragraph to break long words */
+  font-family: "Lugrasimo", cursive;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+
+
+.schoolButton,
+.studentButton,
+.teacherButton {
+    padding: 35px 40px; /* Adjust padding as needed */
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 30px;
+    display: inline-block; /* Display the buttons inline */
+    margin-right: 10px; /* Add some space between buttons */
+    width: 275px; /* Set a fixed width for all buttons */
+    text-align: center; /* Center the text inside the buttons */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.studentButton {
+    background-color: #0040b8f9; /* Light blue for student button */
+    color: #ffffff;
+}
+
+.teacherButton {
+    background-color:  #28a745; /* Lighter blue for teacher button */
+    color: #ffffff;
+}
+
+
+
+#menu {
+  position: fixed;
+  top: 10px;
+  left: 10px; /* Changed from right: 10px; */
+  cursor: pointer;
+  font-size: 24px;
+  color: #555;
+}
+
+#menuDrop {
+display: none; /* Hide the dropdown menu by default */
+position: fixed;
+top: 40px;
+left: 20px; /* Changed from right: 20px; */
+background-color: #ffffff;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+padding: 10px;
+z-index: 1;
+display: flex; /* Use flexbox for centering */
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertical */
+}
+
+#menuDrop a {
+display: block;
+padding: 40px;
+text-decoration: none;
+color: #333;
+transition: background-color 0.3s;
+}
+
+#menuDrop a:hover {
+background-color: #f0f0f0;
+}
+
+.arrow {
+position: absolute;
+top: 50%;
+right: 10px;
+transform: translateY(-50%);
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 5px 5px 0 5px;
+border-color: #ffffff transparent transparent transparent;
+}
+.vertical-menu {
+display: flex;
+flex-direction: column;
+align-items: flex-start; /* Align items to the start of the container */
+}
+
+/* Optional: Add margin between items */
+.vertical-menu a {
+margin-bottom: 8px; /* Adjust as needed */
+}
+
+.bar {
+width: 25px;
+height: 3px;
+background-color: #333;
+margin: 4px 0;
+transition: 0.4s;
+}
+
+.open .bar:nth-child(1) {
+transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.open .bar:nth-child(2) {
+opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+transform: rotate(45deg) translate(-5px, -5px);
+}
