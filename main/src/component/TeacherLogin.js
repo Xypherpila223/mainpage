@@ -20,7 +20,7 @@ function TeacherLogin() {
             if (isValidUser) {
                 alert('Login successful!');
                 setUsername(username); // Set the username state
-                navigate('/Bookpage', { state: { username } }); // Pass the username as a prop to Bookpage
+                navigate('/Bookedpage', { state: { username } }); // Pass the username as a prop to Bookpage
             } else {
                 alert('Invalid username or password');
             }
