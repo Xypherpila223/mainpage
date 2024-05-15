@@ -153,7 +153,7 @@ const Bookpage = () => {
           description: 'Book Your Comlab Slot Here!',
         }}
         buttonName="Book"
-        destination="/StudentLogin"
+        destination="/TicketForm"
       />
       <ItemCard
         item={{
@@ -161,7 +161,7 @@ const Bookpage = () => {
           description: 'Check Availabilities of slot here!',
         }}
         buttonName="Check"
-        destination="/request-page"
+        destination="/TicketForm"
       />
       <ItemCard
         item={{
@@ -169,7 +169,7 @@ const Bookpage = () => {
           description: 'Report Your Problem Here!',
         }}
         buttonName="Report"
-        destination="/CalendarPage"
+        destination="/SupportTicket"
       />
     </div>
   );
